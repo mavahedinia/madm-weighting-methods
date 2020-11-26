@@ -12,9 +12,8 @@ parser.add_argument("-o", "--output", help="Output File Path")
 
 def get_weighter(weighter_name) -> WeighterBase:
     weighter = {
-        "ahp": WeighterBase,
         "least-squares": LeastSquaresWeighter,
-        "entropy": WeighterBase,
+        "eigen-vector": EigenvectorWeighter,
     }
 
     if weighter_name not in weighter:
