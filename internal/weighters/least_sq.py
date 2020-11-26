@@ -13,20 +13,12 @@ class LeastSquaresWeighter(WeighterBase):
         weights.weights = minimize(
             self._cost,
             initial_guess,
-            args=(self._get_comparison_matrix_np(),),
+            args=(self.priority_set.get_comparison_matrix_np(),),
             method="SLSQP",
             bounds=[(0.0, 1e10)] * len(weights.attrs),
             constraints={"type": "eq", "fun": lambda x: sum(x) - 1},
         ).x
         return weights
-
-    def _get_comparison_matrix_np(self):
-        comparison_matrix = []
-        for row in self.priority_set.matrice[1:]:
-            comparison_matrix.append(row[1:])
-        comparison_matrix = np.array(comparison_matrix)
-
-        return comparison_matrix
 
     @staticmethod
     def _cost(theta, *args):
