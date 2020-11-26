@@ -20,4 +20,4 @@ class Weights:
 
         for attr in priority_set.matrice[0][1:]:
             self.attrs.append(attr)
-            self.weights.append(100.0)
+            self.weights.append(0.0)
