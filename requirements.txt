@@ -1,0 +1,6 @@
+prettytable==2.0.0; python_version >= "3.6" \
+    --hash=sha256:5dc7fcaca227f48deacd86958ae9d7b8c31a186fcb354bbb066763f20adf3eb9 \
+    --hash=sha256:e37acd91976fe6119172771520e58d1742c8479703489321dc1d9c85e7259922
+wcwidth==0.2.5; python_version >= "3.6" \
+    --hash=sha256:beb4802a9cebb9144e99086eff703a642a13d6a0052920003a230f3294bbe784 \
+    --hash=sha256:c4d647b99872929fdb7bdcaa4fbe7f01413ed3d98077df798530e5b04f116c83
