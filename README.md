@@ -16,3 +16,7 @@ run -m {METHOD} -f {PRIORITY_SET_CSV_FILE} -p {PROBLEM_PARAMETERS_CSV_FILE} -o {
 ```
 
 For more information, please check `run.py`
+
+# Contributors
+
+With special thanks to [Amirreza Salehi](https://github.com/AmirrezaSLH)
